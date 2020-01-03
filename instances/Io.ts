@@ -1,6 +1,6 @@
-import { Git, Gitlab, Program } from '../ADT';
+import {Git, Gitlab, Program} from '../ADT';
 import * as fp from 'fp-ts';
-import { AppConfig, MrId, WorkingBranch } from '../types';
+import {GitlabConfig, MrId, WorkingBranch} from '../types';
 
 export const programIo: Program<fp.io.URI> = {
   ...fp.io.io,
@@ -13,11 +13,11 @@ export const gitIo: Git<fp.io.URI> = {
 };
 
 export const gitlabIo: Gitlab<fp.io.URI> = {
-  createMr: (appConfig: AppConfig) =>
-    fp.pipeable.pipe(
-      fp.console.log(`gitlab createMr with option ${JSON.stringify(appConfig)}`),
-      fp.io.map(() => 42)
-    ),
-  mergeMr: (mrId: MrId) => (appConfig: AppConfig) =>
-    fp.console.log(`gitlab mergeMr with option ${JSON.stringify(appConfig)} and mrId ${mrId}`),
+  createMr: (appConfig: GitlabConfig) =>
+      fp.pipeable.pipe(
+          fp.console.log(`gitlab createMr with option ${JSON.stringify(appConfig)}`),
+          fp.io.map(() => 42)
+      ),
+  mergeMr: (mrId: MrId) => (appConfig: GitlabConfig) =>
+      fp.console.log(`gitlab mergeMr with option ${JSON.stringify(appConfig)} and mrId ${mrId}`),
 };

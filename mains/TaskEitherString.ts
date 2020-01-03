@@ -1,5 +1,11 @@
-import { mainTaskEitherString } from '../instances/TaskEitherString';
-import { APP_CONFIG } from '../secret';
+import {getMain} from '../getMain';
+import {gitlabTaskEitherString, gitTaskEitherString, programTaskEitherString,} from '../instances/TaskEitherString';
+import {GITLAB_CONFIG} from '../helpers';
 
-const main = mainTaskEitherString(APP_CONFIG);
-main().then(console.log, console.log);
+export const main = getMain({
+    ...programTaskEitherString,
+    ...gitTaskEitherString,
+    ...gitlabTaskEitherString,
+});
+
+main(GITLAB_CONFIG)().then(console.log, console.log);

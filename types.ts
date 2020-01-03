@@ -1,14 +1,16 @@
 import * as fp from 'fp-ts';
+import {Gitlab as GitlabClient} from 'gitlab';
 
 export type WorkingBranch = string;
 type TargetBranch = string;
 type ProjectId = number;
 export type MrId = number;
 
-export interface AppConfig {
+export interface GitlabConfig {
   workingBranch: WorkingBranch;
   targetBranch: TargetBranch;
   projectId: ProjectId;
+  gitlabClient: GitlabClient;
 }
 
 export const TaskEitherStringURI = 'TaskEitherString';
