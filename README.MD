@@ -8,7 +8,7 @@ A tool for do following thing just one command line:
  4. merge it
 
 ## Why
-0. A **real** example for **functional programing**(with `fp-ts` and `tagless final`) 
+0. A **real** example for **functional programming**(with `fp-ts` and `tagless final`) 
 1. Get rid of the tedious work of pushing your code to the "main" branch.
 
 ## See also
