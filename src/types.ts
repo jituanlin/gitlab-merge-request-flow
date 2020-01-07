@@ -2,8 +2,8 @@ import * as fp from 'fp-ts';
 import {Gitlab as GitlabClient} from 'gitlab';
 
 export type WorkingBranch = string;
-type TargetBranch = string;
-type ProjectId = number;
+export type TargetBranch = string;
+export type ProjectId = number;
 export type MrId = number;
 
 export interface GitlabConfig {
