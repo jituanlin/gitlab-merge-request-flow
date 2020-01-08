@@ -1,6 +1,6 @@
 import {getMain} from '../getMain';
 import {gitlabTaskEitherString, gitTaskEitherString, programTaskEitherString,} from '../instances/TaskEitherString';
-import {GITLAB_CONFIG} from '../helpers';
+import {APP_CONFIG} from '../helpers';
 
 export const taskEitherMain = getMain({
     ...programTaskEitherString,
@@ -8,4 +8,4 @@ export const taskEitherMain = getMain({
     ...gitlabTaskEitherString,
 });
 
-// taskEitherMain(GITLAB_CONFIG)().then(console.log, console.log);
+// taskEitherMain(APP_CONFIG)().then(console.log, console.log);
