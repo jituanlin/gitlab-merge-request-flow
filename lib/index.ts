@@ -1,4 +1,4 @@
-#!/usr/bin/ts-node
+#!./node_modules/ts-node/dist/bin.js
 
 import { main } from './main';
 import * as fp from 'fp-ts';

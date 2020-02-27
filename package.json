@@ -14,7 +14,12 @@
     "gitlab": "^14.1.0",
     "prettier": "^1.19.1",
     "ramda": "^0.26.1",
-    "simple-git": "^1.129.0"
+    "simple-git": "^1.129.0",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.8.2"
+  },
+  "bin": {
+    "gmrf": "./lib/index.ts"
   },
   "repository": {
     "type": "git",
