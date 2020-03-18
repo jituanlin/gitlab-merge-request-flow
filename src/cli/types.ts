@@ -1,4 +1,4 @@
-import { ProjectId, TargetBranch, WorkingBranch } from '../src/types';
+import { ProjectId, TargetBranch, WorkingBranch } from '../types';
 
 export interface LibConfig {
   configLocation: string;

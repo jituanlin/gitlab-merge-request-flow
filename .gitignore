@@ -9,5 +9,4 @@ out
 gen
 /node_modules/
 secret.ts
-
-
+/lib

@@ -1,11 +1,10 @@
 import * as fp from 'fp-ts';
 import { promises as fsPromises } from 'fs';
-import { DEFAULT_CONFIG_FILE_LOCATION } from './configs';
-import { getMessageOfError } from '../src/helpers';
-import { StaticAppConfig, LibConfig } from './types';
-import { AppConfig } from '../src/types';
-import { taskEitherMain } from '../src/mains/TaskEitherString';
 import { Gitlab as GitlabClient } from 'gitlab';
+import { getMessageOfError } from '../helpers';
+import { taskEitherMain } from '../mains/TaskEitherString';
+import { DEFAULT_CONFIG_FILE_LOCATION } from './configs';
+import { LibConfig, StaticAppConfig } from './types';
 import simplegit = require('simple-git/promise');
 
 const readConfig: fp.readerTaskEither.ReaderTaskEither<string, string, JSON> = (

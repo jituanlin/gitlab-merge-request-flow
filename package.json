@@ -1,10 +1,11 @@
 {
   "name": "gitlab-merge-request-flow",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "A real example for functional programming(with fp-ts and tagless final) ",
-  "main": "index.js",
+  "main": "/lib/cli/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf lib;tsc -p ."
   },
   "author": "jituanlin",
   "license": "MIT",
@@ -19,7 +20,7 @@
     "typescript": "^3.8.2"
   },
   "bin": {
-    "gmrf": "./lib/index.ts"
+    "gmrf": "/lib/cli/index.js"
   },
   "repository": {
     "type": "git",

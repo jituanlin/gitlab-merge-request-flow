@@ -1,6 +1,6 @@
 #!./node_modules/ts-node/dist/bin.js
 
-import { main } from './main';
+import { main } from './cli/main';
 import * as fp from 'fp-ts';
 
 main({

@@ -1,32 +1,15 @@
 {
-  "compileOnSave": true,
   "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "*": ["types/*"]
-    },
-    "target": "es2017",
+    "target": "es5",
     "module": "commonjs",
+    "lib": ["es6", "es2015", "dom"],
+    "declaration": true,
+    "outDir": "lib",
+    "rootDir": "src",
     "strict": false,
-    "noImplicitAny": false,
-    "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,
-    "charset": "utf8",
-    "allowJs": false,
-    "pretty": true,
-    "noEmitOnError": false,
-    "noUnusedLocals": false,
-    "noImplicitThis": false,
+    "types": ["node"],
+    "esModuleInterop": true,
     "resolveJsonModule": true,
-    "noUnusedParameters": false,
-    "allowUnreachableCode": false,
-    "allowUnusedLabels": false,
-    "strictPropertyInitialization": false,
-    "noFallthroughCasesInSwitch": true,
-    "skipLibCheck": true,
-    "skipDefaultLibCheck": true,
-    "inlineSourceMap": true,
-    "importHelpers": false
-  },
-  "exclude": ["node_modules*", "test/"]
+    "noImplicitAny": false
+  }
 }
