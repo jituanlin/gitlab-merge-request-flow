@@ -1,6 +1,7 @@
-import { Git, Gitlab, Program } from '../ADT';
 import * as fp from 'fp-ts';
-import { AppConfig, MrId, WorkingBranch } from '../types';
+
+import { Git, Gitlab, Program } from '../ADT';
+import { MrId } from '../types';
 
 export const programIo: Program<fp.io.URI> = {
   ...fp.io.io,
