@@ -1,14 +1,14 @@
 # Gitlab Merge Request FLow
 
-## What is
-A tool for do following thing just one command line: 
+## It is
+A tool that can complete the following operations with only one command line:: 
  1. rebase remote branch, then
  2. push local branch, then
  3. create merge request, then
  4. merge it
  
 # How
-0. install `npm install gitlab-merge-request-flow`
+0. install with `npm install gitlab-merge-request-flow`
 1. config your gitlab info: 
 ```json
 {
@@ -24,7 +24,7 @@ A tool for do following thing just one command line:
 ```
 The `project_name_a` is a project name. You can config multiple projects
 and distinguish by project name.   
-2. run command `gmrf /project_name_a /your_config_path` for execute the flow(
+2. run command `gmrf /project_name_a /your_config_path` to execute the process(
 see *What is* section for detail);
 The `project_name_a /your_config_path` is where you put your config file,
 default to ` ~/.config/glmr/config.json`
